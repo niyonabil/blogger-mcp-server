@@ -13,7 +13,7 @@
     }
   ],
   "env": {
-    "BLOGGER_API_KEY": "@blogger_api_key",
+    "BLOGGER_API_KEY": "VOTRE_CLE_API_BLOGGER",
     "MCP_MODE": "http",
     "MCP_HTTP_HOST": "0.0.0.0",
     "MCP_HTTP_PORT": "3000",
