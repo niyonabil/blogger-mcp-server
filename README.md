@@ -36,8 +36,10 @@ npm install
 npm run build
 ```
 if error install : 
-npm install --save-dev @types/express @types/socket.io
 
+```bash
+npm install --save-dev @types/express @types/socket.io
+```
 ## Configuration
 
 ### Obtenir une clé API Blogger
