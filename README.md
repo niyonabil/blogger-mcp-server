@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # blogger-mcp-server
 =======
 # Serveur MCP pour Blogger
