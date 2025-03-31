@@ -35,6 +35,8 @@ cd blogger-mcp-server
 npm install
 npm run build
 ```
+if error install : 
+npm install --save-dev @types/express @types/socket.io
 
 ## Configuration
 
