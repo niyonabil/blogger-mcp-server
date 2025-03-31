@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/index.js"
+    }
+  ],
+  "env": {
+    "BLOGGER_API_KEY": "@blogger_api_key",
+    "MCP_MODE": "http",
+    "MCP_HTTP_HOST": "0.0.0.0",
+    "MCP_HTTP_PORT": "3000",
+    "BLOGGER_MAX_RESULTS": "10",
+    "BLOGGER_API_TIMEOUT": "30000",
+    "LOG_LEVEL": "info"
+  }
+}

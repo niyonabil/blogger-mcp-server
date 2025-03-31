@@ -1,0 +1,155 @@
+/* Styles pour le tableau de bord du serveur MCP Blogger */
+
+/* Variables */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+  --sidebar-width: 250px;
+}
+
+/* Styles généraux */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  width: var(--sidebar-width);
+}
+
+.sidebar .nav-link {
+  color: #ced4da;
+  padding: .75rem 1rem;
+  margin-bottom: .25rem;
+  border-radius: .25rem;
+  transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+/* Main content */
+main {
+  padding-top: 1.5rem;
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.card h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+/* Status badge */
+.status-badge {
+  font-size: 1.2rem;
+}
+
+/* Tables */
+.table {
+  font-size: 0.9rem;
+}
+
+.table th {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+/* Logs */
+.logs-container {
+  background-color: #2c3e50;
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.logs-pre {
+  color: #ecf0f1;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+/* Tools list */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.tool-name {
+  font-weight: 600;
+}
+
+.tool-description {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    padding-top: 0;
+  }
+  
+  main {
+    margin-left: 0 !important;
+  }
+}
+
+/* Animation for data updates */
+@keyframes highlight {
+  0% { background-color: rgba(52, 152, 219, 0.3); }
+  100% { background-color: transparent; }
+}
+
+.highlight {
+  animation: highlight 1.5s ease-out;
+}
