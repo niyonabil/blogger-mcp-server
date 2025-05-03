@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/niyonabil-blogger-mcp-server-badge.png)](https://mseep.ai/app/niyonabil-blogger-mcp-server)
+
 # blogger-mcp-server
 =======
 # Serveur MCP pour Blogger
